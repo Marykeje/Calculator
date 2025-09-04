@@ -15,7 +15,7 @@ body {
 .calculator {
   width: 400px;
   height: 100%;
-  padding: 70px 30px 30px;
+  padding: 60px 30px 30px;
   background-color: #000;
   border-radius: 10px;
 }
@@ -72,7 +72,7 @@ input::placeholder {
   color: #fff;
 }
 
-.orange {
+.operator {
   background-color: orange;
   color: #fff;
 }
