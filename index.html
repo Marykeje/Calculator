@@ -12,20 +12,14 @@
       <div class="calculator">
         <div class="input-box">
           <label for=""></label>
-          <input
-            name="number"
-            type="text"
-            placeholder="0"
-            class="calc-space"
-            id="result"
-          />
+          <input type="text" placeholder="" class="result-space" id="result" />
         </div>
         <div class="calc-operation">
-          <p class="symbol">AC</p>
-          <p class="symbol">+/-</p>
-          <p class="symbol">&percnt;</p>
-          <p class="symbol operator">&divide;</p>
-          <button class="symbol symbols">7</button>
+          <button class="symbol operator">AC</button>
+          <button class="symbol">+/-</button>
+          <button class="symbol">&percnt;</button>
+          <button class="symbol operator">&divide;</button>
+          <button class="symbol symbols" onclick="">7</button>
           <button class="symbol symbols">8</button>
           <button class="symbol symbols">9</button>
           <button class="symbol operator">x</button>
@@ -43,6 +37,30 @@
         </div>
       </div>
 
+      <div class="form-body">
+        <form action="" class="form-input">
+          <div class="outline">
+            <input type="number" id="num1" placeholder="first-input" />
+          </div>
+          <div class="outline">
+            <select name="operator" id="operator">
+              <option value="default" onclick="calculate()">Select</option>
+              <option value="add" onclick="calculate()">+</option>
+              <option value="subtract" onclick="">-</option>
+              <option value="divide" onclick="">/</option>
+              <option value="multiply" onclick="">x</option>
+            </select>
+          </div>
+          <div class="outline">
+            <input type="number" id="num2" placeholder="2nd input" />
+          </div>
+        </form>
+        <div>
+          <button type="submit" class="submit-btn" onclick="myForm()">Submit</button>
+        </div>
+
+        <p id="result"></p>
+      </div>
       <div class="noise"></div>
     </div>
 
